@@ -9,9 +9,9 @@ class DetailsList extends Component {
                     return(
                         <div className='list-box'>
                             <div key={index}>
-                                <p>Name: {user.title}</p>
-                                <p>Email: {user.author}</p>
-                                <p>Gen: {user.description}</p>
+                                <p>Book title: {user.title}</p>
+                                <p>Author: {user.author}</p>
+                                <p>Description: {user.description}</p>
                         </div>
                         </div>
                     )
