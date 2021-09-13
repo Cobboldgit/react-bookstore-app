@@ -85,7 +85,7 @@ body {
   padding-left: 20px;
   outline: none;
   color: #fff;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .formBox form input::placeholder {
