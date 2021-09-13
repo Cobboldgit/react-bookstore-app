@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import DetailsInput from './component/DetailsInput'
+import DetailsList from './component/DetailsList'
+import './App.css'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(props) {
+  const [users, setUser] = useState([]);
+
+  function addUser(addUpToUser) {
+    setUser([...users, addUpToUser])
+  }
+  return(
+    <div>
+       <div className='app-bg'>
+        <div id="para">React BookStore App</div>
+        <DetailsInput addUser={addUser}/>
+        <DetailsList printUser={users}/>
+      </div>
     </div>
-  );
+  )
 }
+
+// class App extends Component {
+//   constructor(props) {
+//     super(props);
+//     this.state = {users: []}
+//   } 
+
+//   AddUser(addUpToUser){
+//     //make copy of the current users state and add a new user
+//     this.setState([...this.state.users, this.addUpToUser])
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <DetailsInput addUser={this.AddUser}/>
+//         {/* <ContactList PrintUser={user}/> */}
+//       </div>
+//     )
+//   }
+// }
 
 export default App;
