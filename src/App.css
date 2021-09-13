@@ -108,7 +108,7 @@ body {
   padding-left: 20px;
   outline: none;
   color: #fff;
-  transition: 0.2s ease;
+  transition: 0.1s ;
 }
 
 .formBox form textarea::placeholder {
