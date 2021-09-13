@@ -97,6 +97,29 @@ body {
   border-color: rgb(255, 255, 255);
 }
 
+.formBox form textarea {
+  width:100%;
+  margin: 10px;
+  height: 40px;
+  border: solid rgb(255, 136, 0) 1px;
+  border-bottom: 3px solid rgb(255, 136, 0);
+  background-color: transparent;
+  border-radius: 5px;
+  padding-left: 20px;
+  outline: none;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.formBox form textarea::placeholder {
+  color: #fff;
+}
+
+.formBox form textarea:focus {
+  background-color: transparent;
+  border-color: rgb(255, 255, 255);
+}
+
 .formBox form button {
   cursor: pointer;
   width: 475px;
